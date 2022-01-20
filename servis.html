@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Servises</title>
+    <link rel="stylesheet" href="servis.css">
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <div class="header__top">
+            <div class="header__top-logo">
+                <p id="servis">Catering Brest</p>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <ul class="header__bottom-menu">
+                <li><a href="cat-main.html">Главная</a></li>
+                <li><a href="#">Наши услуги</a></li>
+                <li><a href="dishes.html">Наши блюда</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="comments.html">Отзывы</a></li>
+                <li><a href="cat-main.html#cont">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--УСЛУГИ-->
+    <div class="services">
+        <div class="services__title">
+            <h2>Популярные услуги</h2>
+        </div>
+        <div class="services__types">
+                <div class="services__types-1">
+                    <i class="fas fa-cocktail"></i>
+                    <div class="services__types-text">
+                        <h3>Фуршет</h3>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto minus iste repellat quibusdam voluptatem vero saepe quas officiis ipsa provident, rerum quae suscipit. Beatae nisi excepturi quam placeat accusantium!</p><h4>240.00</h4></div>
+                    </div>
+                </div>
+           
+                <div class="services__types-1">
+                    <i class="fas fa-glass-cheers"></i>
+                    <div class="services__types-text">
+                        <h3>Банкет</h3>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto minus iste repellat quibusdam voluptatem vero saepe quas officiis ipsa provident, rerum quae suscipit. Beatae nisi excepturi quam placeat accusantium!</p><h4>250.00</h4></div>
+                    </div>
+                </div>
+           
+                <div class="services__types-1">
+                    <i class="fas fa-birthday-cake"></i>
+                    <div class="services__types-text">
+                        <h3>Детский праздник</h3>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto minus iste repellat quibusdam voluptatem vero saepe quas officiis ipsa provident, rerum quae suscipit. Beatae nisi excepturi quam placeat accusantium!</p><h4>300.00</h4></div>
+                    </div>
+                </div>
+           
+                <div class="services__types-1">
+                    <i class="fas fa-tree"></i>
+                    <div class="services__types-text">
+                        <h3>Барбекю</h3>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto minus iste repellat quibusdam voluptatem vero saepe quas officiis ipsa provident, rerum quae suscipit. Beatae nisi excepturi quam placeat accusantium!</p><h4>150.00</h4></div>
+                    </div>
+                </div>
+           
+                <div class="services__types-1">
+                    <i class="fas fa-user-tie"></i>
+                    <div class="services__types-text">
+                        <h3>Услуги официанта</h3>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto minus iste repellat quibusdam voluptatem vero saepe quas officiis ipsa provident, rerum quae suscipit. Beatae nisi excepturi quam placeat accusantium!</p><h4>100.00</h4></div>
+                    </div>
+                </div>
+           
+                <div class="services__types-1">
+                    <i class="fas fa-campground"></i>
+                    <div class="services__types-text">
+                        <h3>Аренда шатров</h3>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto minus iste repellat quibusdam voluptatem vero saepe quas officiis ipsa provident, rerum quae suscipit. Beatae nisi excepturi quam placeat accusantium!</p><h4>200.00</h4></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!--ФОРМА СООБЩЕНИЯ-->
+    <div class="message">
+        <div class="message__text">
+            <p>Напишите нам</p>
+        </div>
+        <div class="message__form">
+            <form class="message__form-block" action="#" method="POST">
+
+                <div class="message__form-1"><label for="name" class="message__name">Имя</label>
+                    <input id="name" class="message__form-name" name="myname" type="text" placeholder="Введите Ваше имя">
+                </div>
+
+                <div class="message__form-2"><label for="tel" class="message__name">Номер телефона</label>
+                    <input class="message__form-telephone" id="tel" type="tel" name="tel"
+                        pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                        placeholder="+375 (_ _) - _ _ _ - _ _ - _ _">
+                </div>
+
+                <div class="message__form-3"><label for="text" class="message__name">Сообщение</label>
+                    <textarea class="message__form-text" id="text" name="mytext" maxlength="450"
+                        placeholder="Напишите Ваше сообщение"></textarea>
+                </div>
+
+                <div class="message__form-4"> <input class="message__button" type="submit" value="Отправить"></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <title>About</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="header__top">
+            <div class="header__top-logo">
+                <p id="servis">Catering Brest</p>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <ul class="header__bottom-menu">
+                <li><a href="cat-main.html">Главная</a></li>
+                <li><a href="servis.html">Наши услуги</a></li>
+                <li><a href="dishes.html">Наши блюда</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="comments.html">Отзывы</a></li>
+                <li><a href="cat-main.html#cont">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--О НАС-->
+    <div class="about">
+        <div class="about__title"><h2>О нас</h2></div>
+        <div class="about__block">
+            <div class="about__block-text">
+                <p>Наша история  берет свое начало в 2008 году. Тогда мы начали свой путь с открытия первого тематического ресторана в Бресте.
+                По истечении времени начал появляться запрос на приготовление пищи и обслуживание не только в стенах ресторана, многие хотели провести свадьбу в живописном месте за городом, но технической возможности организовать застолье на ресторанном уровне не имели. 
+                </p>
+            </div>
+            <div class="about__block-img"><img src="img-5/d20gDNv.jpeg" alt="buffet"></div>
+        </div>
+
+        <div class="about__block">
+            <div class="about__block-img"><img src="img-5/4hKD0gX.jpeg" alt="bankuet"></div>
+            <div class="about__block-text">
+                <p>Время шло, и спрос на подобное обслуживание рос. В 2010 году вся деятельность, относящаяся «кейтерингу», была вынесена в отдельное подразделение и приобрела новый качественный уровень. 
+                За все прошедшие годы мы накопили внушительный опыт в обслуживании всевозможных мероприятий, нарастили материально-техническую базу и сформировали безупречный коллектив, готовый к любым вызовам. 
+                </p>
+            </div>
+        </div>
+
+        <div class="about__block">
+            <div class="about__block-text">
+                <p>На нашем предприятии внедрена система менеджмента безопасности пищевой продукции ХАССП, что подразумевает собой полное соответствие расширенным требованиям к производству и хранению пищевой продукции. 
+                    Обратившись к нам, вы получите безупречное обслуживание на любой площадке и в любых условиях. Будем рады вас видеть в числе своих клиентов!
+                </p>
+            </div>
+            <div class="about__block-img"><img src="img-5/kTsvFDp.jpeg" alt="buffet"></div>
+        </div>
+    </div>
+
+    <!--ФОРМА СООБЩЕНИЯ-->
+    <div class="message">
+        <div class="message__text">
+            <p>Напишите нам</p>
+        </div>
+        <div class="message__form">
+            <form class="message__form-block" action="#" method="POST">
+
+                <div class="message__form-1"><label for="name" class="message__name">Имя</label>
+                    <input id="name" class="message__form-name" name="myname" type="text" placeholder="Введите Ваше имя">
+                </div>
+
+                <div class="message__form-2"><label for="tel" class="message__name">Номер телефона</label>
+                    <input class="message__form-telephone" id="tel" type="tel" name="tel"
+                        pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                        placeholder="+375 (_ _) - _ _ _ - _ _ - _ _">
+                </div>
+
+                <div class="message__form-3"><label for="text" class="message__name">Сообщение</label>
+                    <textarea class="message__form-text" id="text" name="mytext" maxlength="450"
+                        placeholder="Напишите Ваше сообщение"></textarea>
+                </div>
+
+                <div class="message__form-4"> <input class="message__button" type="submit" value="Отправить"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

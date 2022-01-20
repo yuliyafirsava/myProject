@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poiret One', cursive;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    background-color: rgba(255, 212, 212, 0.699);
+}
+
+.header__top{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__top-logo{
+    font-family: 'Open Sans Condensed', sans-serif;
+    flex-grow: 3;
+    padding: 20px;
+    text-align: center;
+    color: rgb(155, 155, 173);
+    font-size: 40px;
+}
+
+.header__bottom-menu{
+    list-style-type: none;
+    text-align: center;
+}
+
+.header__bottom-menu li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 20px;
+}
+
+.header__bottom-menu li a{
+    text-decoration: none;
+    color: rgb(126, 126, 151);
+}
+
+.header__bottom-menu li a:hover{
+    color: rgb(165, 56, 56);  
+}
+
+
+/*МЕНЮ*/
+.menu{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+.menu__title{
+    text-align: center;
+    color: rgb(160, 96, 149);
+}
+
+.menu__block{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px auto 10px;
+}
+
+.menu__block-title{
+    flex: 1 1 100px;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(214, 229, 248, 0.692);
+    height: auto;
+    padding: 20px;
+    box-shadow:  5px 10px 20px rgb(209, 213, 235);  
+    border-radius: 10px;
+    color: rgb(48, 22, 49);
+}
+
+.menu__block-title .fas{
+    font-size: 25px;
+    margin: 20px;
+}
+
+.menu__block-title span{
+    font-weight: bolder;
+    color: rgb(60, 73, 97);
+    line-height: 200%;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+/*ФОРМА СООБЩЕНИЯ*/
+.message{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 231, 231);
+    padding: 10px 10px 40px;
+}
+
+.message__text{
+    height: 40px;
+    width: 30%;
+    margin: -30px auto 10px;
+    padding: 5px;
+    color: rgb(170, 134, 134);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 10px 15px 5px rgba(235, 181, 170, 0.74);
+    background-color: rgb(255, 198, 198);
+}
+
+.message__text p{
+    margin: 10px;
+    font-size: 20px; 
+}
+
+.message__form-block{
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+
+.message__form-1{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+    margin: 5px;
+}
+
+#name{
+    border-radius: 5px;
+    border: 0.5px solid rgba(201, 122, 122, 0.829);
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.message__name{
+    color:rgb(170, 123, 123);
+}
+
+.message__form-2{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+    margin: 5px;
+}
+
+#tel{
+    border-radius: 5px;
+    border: 0.5px solid rgba(201, 122, 122, 0.829);
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+}
+
+#text[placeholder]{
+    padding-top: 15px;
+    font-size: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.message__form-3{
+    display: flex;
+    flex-direction: column;
+    flex: 4 1 100px;
+    margin: 5px;
+}
+
+#text{
+    height: 50px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(201, 122, 122, 0.829);
+    height: 35px;
+}
+
+.message__form-4{
+    flex: 1 1 100px;
+    margin: 5px;
+    padding-top: 16px;
+}
+
+.message__button{
+    flex: 1 1 100px;
+    margin: 2px 0;
+    border-radius: 5px;
+    border: none;
+    background-color:rgba(241, 199, 199, 0.726);
+    color: rgb(48, 22, 49);
+    text-align: center;
+    font-size: 15px;
+    height: 52px;
+    width: 100%;
+    transition-duration: 0.5s;
+    outline: none;
+}
+
+.message__button:hover{
+    cursor: pointer;
+    background-color: rgba(219, 119, 119, 0.678);
+    color: rgb(255, 255, 255);
+}
+
+@media all and (min-width: 1024px) and (max-width: 1279px){ /************************************************/
+    .menu{
+        padding: 10px 0;
+        }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px){ /************************************************/
+    .header__bottom-menu li{
+        margin: 10px 15px;
+    }
+    .menu{
+        padding: 10px 0;
+    }
+    .menu__block{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1% ; 
+        width: 95%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px){ /************************************************/
+    .header__top{
+        padding: 5px;
+    }
+    .header__top-logo {
+        font-size: 4vw;
+        padding: 2px;
+    }
+    .header__bottom-menu li{
+        margin: 5px;
+        font-size: 3vw;
+    }
+    .menu{
+        padding: 10px 0;
+        background-color: rgba(255, 248, 247, 0.753);
+    }
+    .menu__block{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1% ; 
+        width: 95%;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px 10px;
+        height: auto;
+    }
+    .message__button{
+        margin-bottom: 20px;
+    }
+    .message__text{
+        width: 50%;
+    }
+    .message__form-block{
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto 10px;
+        height: 100px;
+    }
+    #name, #tel{
+        height: 30px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 479px){ /************************************************/
+    .header__top{
+        padding: 5px;
+    }
+    .header__top-logo {
+        font-size: 4vw;
+        padding: 2px;
+    }
+    .header__bottom-menu li{
+        margin: 3px;
+        font-size: 3vw;
+    }
+    .menu{
+        padding: 10px 0;
+        background-color: rgba(255, 248, 247, 0.753);
+    }
+    .menu__block{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .message{
+        background-color: white;
+    }
+    .message__button{
+        margin-bottom: 20px;
+    }
+    .message__text{
+        width: 60%;
+    }
+    .message__form-block{
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto 10px;
+        height: 100px;
+    }
+    #name, #tel{
+        height: 30px;
+    }
+}
+
+
+
+
+      

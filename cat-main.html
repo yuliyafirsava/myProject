@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="cat.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Catering</title>
+</head>
+
+<body>
+
+    <!--ХЕДЕР-->
+    <header>
+        <div class="header__top">
+            <div class="header__top-search">
+                <form action="#" method="GET">
+                    <input class="header__top-search-form" name="search" type="text" placeholder="поиск по сайту">
+                </form>
+                <button class="header__top-search-button">&#128269;</button>
+            </div>
+
+            <div class="header__top-logo">
+                <p>Catering Brest</p>
+            </div>
+
+            <div class="header__top-call">
+                <form action="#" method="GET">
+                    <input class="header__top-call-form" name="call" type="text" placeholder="заказать звонок">
+                </form>
+                <button class="header__top-call-button">&#128222;</button>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <span id="trigger" class="trigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+            <ul class="header__bottom-menu" id="header-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="servis.html">Наши услуги</a></li>
+                <li><a href="dishes.html">Наши блюда</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="comments.html">Отзывы</a></li>
+                <li><a href="#cont">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--ЗАСТАВКА-->
+    <div class="picture" id="main">
+        <img class="picture__img" src="img-5/NRnyRiF.jpeg" alt="serving">
+    </div>
+
+    <!--ФОРМА СООБЩЕНИЯ-->
+    <div id="serv"></div>
+    <div class="message">
+        <div class="message__text">
+            <p>Напишите нам</p>
+        </div>
+        <div class="message__form">
+            <form class="message__form-block" action="#" method="POST">
+
+                <div class="message__form-1"><label for="name" class="message__name">Имя</label>
+                    <input id="name" name="myname" class="message__form-name" type="text" placeholder="Введите Ваше имя">
+                </div>
+
+                <div class="message__form-2"><label for="tel" class="message__name">Номер телефона</label>
+                    <input class="message__form-telephone" id="tel" type="tel" name="tel"
+                        pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                        placeholder="+375 (_ _) - _ _ _ - _ _ - _ _">
+                </div>
+
+                <div class="message__form-3"><label for="text" class="message__name">Сообщение</label>
+                    <textarea class="message__form-text" id="text" name="mytext" maxlength="450"
+                        placeholder="Напишите Ваше сообщение"></textarea>
+                </div>
+
+                <div class="message__form-4"> <input id="message-button" class="message__button" type="submit"
+                        value="Отправить"></div>
+            </form>
+        </div>
+    </div>
+
+    <!--УСЛУГИ-->
+    <div class="services">
+        <div class="services__title">
+            <h2>Популярные услуги</h2>
+        </div>
+        <div class="services__types">
+            <div class="services__types-1 furshet">
+                <div class="services__types-text" id="servis">
+                    <h3><a href="servis.html#servis">Фуршет</a></h3>
+                </div>
+            </div>
+
+            <div class="services__types-1 bankuet">
+                <div class="services__types-text">
+                    <h3><a href="servis.html#servis">Банкет</a></h3>
+                </div>
+            </div>
+
+            <div class="services__types-1 deti">
+                <div class="services__types-text">
+                    <h3><a href="servis.html#servis">Детский праздник</a></h3>
+                </div>
+            </div>
+
+            <div class="services__types-1 barbequ">
+                <div class="services__types-text">
+                    <h3><a href="servis.html#servis">Барбекю</a></h3>
+                </div>
+            </div>
+
+            <div class="services__types-1 waiter">
+                <div class="services__types-text">
+                    <h3><a href="servis.html#servis">Услуги официанта</a></h3>
+                </div>
+            </div>
+
+            <div class="services__types-1 tent">
+                <div class="services__types-text">
+                    <h3><a href="servis.html#servis">Аренда шатров</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu"></div>
+
+    <!--МЕНЮ-->
+    <div class="menu">
+        <div class="menu__title">
+            <h2>Наше меню</h2>
+        </div>
+
+        <div class="menu__block">
+            <div class="menu__block-title">
+                <div class="menu__block-img"><img src="img-4/YGEouTy.jpeg" alt="serving"></div>
+                <a href="dishes.html">
+                    <p>Банкетное меню</p>
+                </a>
+            </div>
+
+            <div class="menu__block-title">
+                <div class="menu__block-img"><img src="img-4/EAqULey.jpeg" alt="canapes"></div>
+                <a href="dishes.html">
+                    <p>Фуршетное меню</p>
+                </a>
+            </div>
+
+            <div class="menu__block-title">
+                <div class="menu__block-img"><img src="img-4/DRuSJq0.jpeg" alt="bbq"></div>
+                <a href="dishes.html">
+                    <p>Барбекю меню</p>
+                </a>
+            </div>
+
+            <div class="menu__block-title">
+                <div class="menu__block-img"><img src="img-4/XYlwX7Q.jpeg" alt="cakes"></div>
+                <a href="dishes.html">
+                    <p>Детское меню</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--ФОРМА ЗАКАЗА-->
+    <div class="book" id="we">
+        <h2 class="book__title">Почему стоит заказать кейтеринг у нас</h2>
+        <div class="book__text">
+            <p>Наша команда ответственно относится к воплощению каждого мероприятия: от организации закрытого частного
+                ужина до эксклюзивного банкета или фуршета на несколько сотен участников. <br> Меню, блюда, сервировку и
+                декор разрабатываем для событий индивидуально, учитываем пожелания заказчика, концепцию мероприятия.
+                <br>
+                Если закажете выездной ресторан, вас ждет:
+            </p>
+        </div>
+
+        <div class="book__block">
+            <div class="book__list">
+                <ul>
+                    <li>Сформированное меню</li>
+                    <li>Оформленная площадка</li>
+                    <li>Доставленная еда в нужное время и место</li>
+                    <li>Сервировка столов</li>
+                    <li>Внимательное обслуживание гостей</li>
+                </ul>
+            </div>
+
+            <div class="book__order">
+                <form class="book__order-form" action="#" method="POST">
+                    <div class="book__order-name"><label for="order-name">Имя</label>
+                        <input id="order-name" name="myname" type="text" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="book__order-tel"><label for="order-tel">Телефон</label>
+                        <input id="order-tel" type="tel" name="tel"
+                            pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                            placeholder="+375 (_ _) - _ _ _ - _ _ - _ _">
+                    </div>
+                    <div class="book__order-button"><input id="order-button" type="submit" value="Оформить заявку">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--ПРОЕКТЫ-->
+    <div class="projects">
+        <div class="projects__title">
+            <h2>Наши проекты</h2>
+        </div>
+        <div class="gallery">
+            <div class="gallery__block">
+
+                <div class="gallery__block-box">
+                    <div><img src="img-4/canvas.png" alt="buffet"></div>
+                    <div class="gallery__block-box-text">
+                        <h3 class="slideText">Свадебный фуршет</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas voluptatibus nihil,
+                            labore recusandae voluptatem omnis perspiciatis animi laborum itaque.</p>
+                    </div>
+                </div>
+
+                <div class="gallery__block-box">
+                    <div><img src="img-4/canvas-6.png" alt="buffet"></div>
+                    <div class="gallery__block-box-text">
+                        <h3 class="slideText">Детский праздник</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas voluptatibus nihil,
+                            labore recusandae voluptatem omnis perspiciatis animi laborum itaque.</p>
+                    </div>
+                </div>
+
+                <div class="gallery__block-box">
+                    <div><img src="img-4/canvas-4.png" alt="bbq"></div>
+                    <div class="gallery__block-box-text">
+                        <h3 class="slideText">Корпоративный пикник</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas voluptatibus nihil,
+                            labore recusandae voluptatem omnis perspiciatis animi laborum itaque.</p>
+                    </div>
+                </div>
+
+                <div class="gallery__block-box">
+                    <div><img src="img-4/canvas-5.png" alt="banquet"></div>
+                    <div class="gallery__block-box-text">
+                        <h3 class="slideText">Выпускной на теплоходе</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas voluptatibus nihil,
+                            labore recusandae voluptatem omnis perspiciatis animi laborum itaque.</p>
+                    </div>
+                </div>
+
+                <div class="gallery__block-box">
+                    <div><img src="img-4/canvas-2.png" alt="banquet"></div>
+                    <div class="gallery__block-box-text">
+                        <h3 class="slideText">Свадебный банкет</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas voluptatibus nihil,
+                            labore recusandae voluptatem omnis perspiciatis animi laborum itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--КОММЕНТАРИИ-->
+    <div class="comments" id="comm">
+        <h2 class="comments__title">О нас говорят</h2>
+
+        <div class="comments__block">
+            <div class="comments__block-1">
+                <img class="comments__block-img" src="img-4/fVyAwIm.jpeg" alt="face">
+                <div><i class="far fa-comment"></i></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est cumque, dicta laudantium
+                    reprehenderit nihil aperiam harum perferendis corporis illum, sapiente suscipit officiis a facilis!
+                    <br>
+                    <span>Кортни Кокс</span>
+                </p>
+            </div>
+
+            <div class="comments__block-1">
+                <img class="comments__block-img" src="img-4/ef4gYun.jpeg" alt="face">
+                <div><i class="far fa-comment"></i></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est cumque, dicta laudantium
+                    reprehenderit nihil aperiam harum perferendis corporis illum, sapiente suscipit officiis a facilis!
+                    <br>
+                    <span>Ида Галич</span>
+                </p>
+            </div>
+
+            <div class="comments__block-1">
+                <img class="comments__block-img" src="img-4/eNLpiGG-man.jpeg" alt="face">
+                <div><i class="far fa-comment"></i></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est cumque, dicta laudantium
+                    reprehenderit nihil aperiam harum perferendis corporis illum, sapiente suscipit officiis a facilis!
+                    <br>
+                    <span>Моника Белуччи</span>
+                </p>
+            </div>
+
+            <div class="comments__block-1">
+                <img class="comments__block-img" src="img-4/iJzeaXd-man.jpeg" alt="face">
+                <div><i class="far fa-comment"></i></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est cumque, dicta laudantium
+                    reprehenderit nihil aperiam harum perferendis corporis illum, sapiente suscipit officiis a facilis!
+                    <br>
+                    <span>Леонардо Дикаприо</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--ФУТЕР-->
+    <footer>
+        <div class="footer__block">
+            <div class="footer__block-catering">
+                <h3>Легко заказать</h3>
+                <p>После того, как вы свяжетесь с нами on-line, мы перезвоним для дальнейшего оформленияя заказа.
+                    Вы также можете позвонить в наш call-center по телефону +375 22 332 22 23</p>
+                <h3>Удобная оплата</h3>
+                <p>Мы позаботились о том, чтобы максимально упростить и автоматизировать оплату.
+                    Мы принимаем оплату в наличной и безналичной форме.</p>
+            </div>
+
+            <div class="footer__block-links">
+                <h3>Выбирайте услугу</h3>
+                <a href="servis.html#servis">Фуршет</a>
+                <a href="servis.html#servis">Банкет</a>
+                <a href="servis.html#servis">Детский праздник</a>
+                <a href="servis.html#servis">Барбекю</a>
+                <a href="servis.html#servis">Услуги официанта</a>
+                <a href="servis.html#servis">Аренда шатров</a>
+            </div>
+
+            <div class="footer__block-nav">
+                <h3>Навигация по сайту</h3>
+                <a href="#main">Главная</a>
+                <a href="#serv">Наши услуги</a>
+                <a href="#menu">Наши блюда</a>
+                <a href="#we">О нас</a>
+                <a href="#comm">Отзывы</a>
+            </div>
+
+            <div class="footer__block-contacts" id="cont">
+                <div class="footer__adress-fa"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="footer__address">
+                    <p>г. Брест, ул. Советская, 22</p>
+                </div>
+
+                <div class="footer__tel-fa"><i class="fas fa-phone-alt"></i></div>
+                <div class="footer__tel">
+                    <p>+375 22 332 22 23</p>
+                </div>
+
+                <div><i class="fas fa-envelope"></i></div>
+                <div>
+                    <p>catering_brest@gmail.com</p>
+                </div>
+
+                <div><i class="far fa-clock"></i></div>
+                <div>
+                    <p>Понедельник&#8212; Воскресенье 8.00 &#8211; 22.00</p>
+                </div>
+
+                <div id="cm">
+                    <a href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://ru-ru.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__block-text">Кейтеринг Брест &#169; &#10072; 2021 &#9825;</p>
+    </footer>
+
+    <script src="cat.js"></script>
+
+</body>
+
+</html>

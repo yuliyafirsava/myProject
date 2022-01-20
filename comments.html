@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="comments.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Comments</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="header__top">
+            <div class="header__top-logo">
+                <p id="servis">Catering Brest</p>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <ul class="header__bottom-menu">
+                <li><a href="cat-main.html">Главная</a></li>
+                <li><a href="servis.html">Наши услуги</a></li>
+                <li><a href="dishes.html">Наши блюда</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="comments.html">Отзывы</a></li>
+                <li><a href="cat-main.html#cont">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--ОТЗЫВЫ-->
+    <div class="comments">
+        <div class="comments__title">
+            <h2>ОТЗЫВЫ</h2>
+        </div>
+        <div class="comments__block">
+            <div class="comments__block-left text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor, reprehenderit esse natus
+                    possimus tempore? Maxime, tempora aperiam. Praesentium debitis tempore voluptatem corporis et,
+                    deserunt corrupti sapiente atque vitae cupiditate.</p>
+                <p class="sign">Маша Иванова<br>20/05/2021</p>
+            </div>
+            <div class="comments__block-right empty"></div>
+
+            <div class="comments__block-left empty"></div>
+            <div class="comments__block-right text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque totam eos rerum laborum natus
+                    dolores saepe quod eligendi quae explicabo quos veritatis, et nostrum officia quasi illo odio
+                    facere?</p>
+                <p class="sign">Александр Иванов<br>10/03/2021</p>
+            </div>
+
+            <div class="comments__block-left text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos possimus explicabo doloremque,
+                    laudantium dolore ullam debitis quam corrupti facilis dolorum totam maxime excepturi provident nobis sed repellat, dolorem aut dolores?
+                    Numquam, officiis non.</p>
+                <p class="sign">Татьяна Иванова<br>05/12/2020</p>
+            </div>
+            <div class="comments__block-right empty"></div>
+
+            <div class="comments__block-left empty"></div>
+            <div class="comments__block-right text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam pariatur esse voluptate adipisci
+                    quis debitis laboriosam voluptas, commodi hic acusamus consequuntur ea est a, totam aspernatur
+                    dolores id vero? Voluptates qui sed quis explicabo cumque.</p>
+                <p class="sign">Алексей Иванов<br>20/07/2020</p>
+            </div>
+
+            <div class="comments__block-left text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, omnis! Obcaecati quaerat nisi
+                    consequuntur asperiores quam inventore, ipsam iure eius beatae consequatur vel eaque veritatis
+                    similique aliquam excepturi blanditiis vitae?</p>
+                <p class="sign">Владимир Иванов<br>05/04/2020</p>
+            </div>
+            <div class="comments__block-right empty"></div>
+        </div>
+    </div>
+
+    <!--ФОРМА СООБЩЕНИЯ-->
+    <div class="message">
+        <div class="message__text">
+            <p>Оставьте Ваш комментарий</p>
+        </div>
+        <div class="message__form">
+            <form class="message__form-block" action="#" method="POST">
+
+                <div class="message__form-1"><label for="name" class="message__name">Имя</label>
+                    <input id="name" class="message__form-name" name="myname" type="text" placeholder="Введите Ваше имя">
+                </div>
+
+                <div class="message__form-3"><label for="text" class="message__name">Сообщение</label>
+                    <textarea class="message__form-text" id="text" name="mytext" maxlength="450"
+                        placeholder="Напишите Ваше сообщение"></textarea>
+                </div>
+
+                <div class="message__form-4"> <input class="message__button" type="submit" value="Отправить"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
